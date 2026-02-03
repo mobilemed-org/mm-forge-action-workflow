@@ -1,0 +1,20 @@
+{
+  "name": "forge-deploy-action",
+  "version": "1.0.0",
+  "description": "GitHub Action to deploy sites via Laravel Forge API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "github-action",
+    "laravel",
+    "forge",
+    "deployment"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

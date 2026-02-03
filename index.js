@@ -8,10 +8,10 @@ const POLL_INTERVAL = 10000; // 10 seconds
 const TIMEOUT = 600000; // 10 minutes
 
 // Environment variables
-const FORGE_API_TOKEN = process.env.FORGE_API_TOKEN;
-const FORGE_ORGANIZATION = process.env.FORGE_ORGANIZATION;
-const FORGE_SERVER_ID = process.env.FORGE_SERVER_ID;
-const FORGE_SITE_ID = process.env.FORGE_SITE_ID;
+const FORGE_API_TOKEN = process.env.FORGE_API_TOKEN || process.env["INPUT_FORGE-API-TOKEN"];
+const FORGE_ORGANIZATION = process.env.FORGE_ORGANIZATION || process.env["INPUT_FORGE-ORGANIZATION"];
+const FORGE_SERVER_ID = process.env.FORGE_SERVER_ID || process.env["INPUT_FORGE-SERVER-ID"];
+const FORGE_SITE_ID = process.env.FORGE_SITE_ID || process.env["INPUT_FORGE-SITE-ID"];
 
 /**
  * Validate required environment variables
